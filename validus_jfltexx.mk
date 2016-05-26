@@ -4,7 +4,9 @@ $(call inherit-product, device/samsung/jfltexx/full_jfltexx.mk)
 $(call inherit-product, vendor/validus/config/nfc_enhanced.mk)
 
 # Inherit some common CM stuff.
-$(call inherit-product, vendor/validus/common.mk)
+$(call inherit-product, vendor/validus/config/common.mk)
+
+$(call inherit-product, vendor/validus/config/common_full_phone.mk)
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
   PRODUCT_NAME=jfltexx \
